@@ -16,7 +16,7 @@ const LeftNav = () => {
       <div className="ps-3 mt-3">
         {categories.map((category) => (
           <p key={category.id}>
-            <Link to={`/category/:${category.id}`} className="text-decoration-none text-black fw-semibold">{category.name}</Link>
+            <Link to={`/category/${category.id}`} className="text-decoration-none text-black fw-semibold">{category.name}</Link>
           </p>
         ))}
       </div>
