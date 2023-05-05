@@ -1,9 +1,11 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import NewsCart from '../NewsCart/NewsCart';
+import useTitle from '../../../hooks/useTitle';
 
 const Category = () => {
     const {id} = useParams();
+    useTitle('Home')
     // console.log(id)
     const categoryNews = useLoaderData();
     // console.log(categoryNews)
